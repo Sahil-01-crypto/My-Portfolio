@@ -263,10 +263,13 @@ body {
   justify-content: flex-start;  
 }
     .leftsidehome h1 {
+        text-align: center;
+        /* margin-left: 4.5vw; */
         font-size: 13vw;
         line-height: 6vh;
     }
     .leftsidehome h2 {
+        text-align: center;
         font-size: 8vw;
         line-height: 7vh;
     }
@@ -274,17 +277,18 @@ body {
     font-size: 1.8vh;
     line-height: 2.4vh;
     padding-right: 2vw;
+    text-align: center;
 }
 .socialmedia{
     justify-content: center;
    line-height: 4vw;
-    gap: 5vw;
+    gap: 5.5vw;
     padding: 4vw 0 ;
     
 }
 .socialmedia a {
-    font-size: 3vw;
-    padding: 3vw 3vw;
+    font-size: 4vw;
+    padding: 4vw 4vw;
     
 }
 .rightsidehome{
