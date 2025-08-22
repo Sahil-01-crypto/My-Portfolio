@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #000, #5e6268);
+    color: #fff;
+}
+
+/* NAVBAR */
+.navsection {
+    background-image: linear-gradient(to right,black , rgb(44, 42, 42)
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vw;
+    min-height: 60px;
+    position: relative;
+    border-bottom: 2px solid #00FFFF;
+}
+
+.logo {
+    font-size: 2.3vw;
+    padding: 0 12vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navicons {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5vw;
+    padding-right: 2vw;
+}
+
+.navmenu li {
+    list-style: none;
+}
+
+.navmenu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.29vw;
+    font-weight: 500;
+    transition: transform 0.5s ease 
+}
+.navicons  li:hover a {
+    display: inline-block;
+    transform:scale(1.3);
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+
+/* HAMBURGER hidden on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 5vw;
+}
+
+
+.homesec {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftsidehome {
+    width: 60%;
+    height: 100vh;
+    padding: 18vw 8vw;
+
+    /* background-color: aqua; */
+}
+
+.leftsidehome h1 {
+    font-size: 3.8vw;
+    font-weight: 700;
+    line-height: 2vw;
+  animation: up-down 2s infinite ease-in-out; /* Apply the animation */
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0); /* Start at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up by 10 pixels */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+
+
+.leftsidehome h2 {
+    font-size: 2vw;
+    font-weight: 800;
+    line-height: 5vw;
+    transition: transform 0.5s ease;
+}
+.leftsidehome h2:hover{
+    transform: scale(1.1);
+    color: #272626;
+    text-shadow:  0 0 2vw #00FFFF;
+}
+
+.leftsidehome h1 span {
+    color: #00FFFF;
+}
+
+.leftsidehome p {
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    font-weight: 500;
+}
+
+.rightsidehome {
+    width: 40%;
+    height: 100vh;
+    
+    width: 30vw;
+    height: 30vw;
+    background-color: bisque; /* your peach box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.rightsidehome img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.rightsidehome:hover{
+    box-shadow: 0 0 8vw #00FFFF;
+}
+
+
+
+/* Social Media Icons */
+.socialmedia {
+    display: flex;
+    gap: 2vw;
+    margin-top: 2vw;
+    padding-left: 0;
+    /* Remove extra padding */
+}
+
+.socialmedia a {
+    width: 4vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    border: 0.2vw solid #00FFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00FFFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.socialmedia a:hover {
+    background: #00FFFF;
+    border: 0.2vw solid white;
+    box-shadow: 0 0 2vw #00FFFF;
+    color: #000;
+    transform: scale(1.1);
+}
+
+
+/* ----- Mobile (<=600px) ----- */
+@media (max-width:600px) {
+    .navsection {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 5vw;
+    }
+
+    /* Centered popup menu */
+    .navmenu {
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        /* hidden by default */
+        background: rgba(29, 27, 27, 0.95);
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 0;
+        border-radius: 12px;
+        z-index: 999;
+
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    /* Show menu when active */
+    .navmenu.active {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .navmenu a {
+        font-size: 18px;
+        display: block;
+        padding: 10px 0;
+        color: white;
+    }
+
+    .homesec{
+     height: 100vh;
+     flex-direction: column;
+      justify-content: flex-start; /* Add this line to move content to the top */
+    }
+    .leftsidehome {
+        margin-top: 7vw;
+  align-items: none;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 40vh;
+  display: flex; /* Add this line to enable flexbox */
+  flex-direction: column; /* This is already present and correct */
+  justify-content: flex-start;  
+}
+    .leftsidehome h1 {
+        font-size: 13vw;
+        line-height: 6vh;
+    }
+    .leftsidehome h2 {
+        font-size: 8vw;
+        line-height: 7vh;
+    }
+.leftsidehome p {
+    font-size: 1.8vh;
+    line-height: 2.4vh;
+    padding-right: 2vw;
+}
+.socialmedia{
+    justify-content: center;
+   line-height: 4vw;
+    gap: 5vw;
+    padding: 4vw 0 ;
+    
+}
+.socialmedia a {
+    font-size: 3vw;
+    padding: 3vw 3vw;
+    
+}
+.rightsidehome{
+    width: 90vw ;
+    height: 90vw;
+}
+}
