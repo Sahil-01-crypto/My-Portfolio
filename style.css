@@ -24,7 +24,7 @@ body {
     height: 5vw;
     min-height: 60px;
     position: relative;
-    border-bottom: 2px solid #00FFFF;
+    /* border-bottom: 2px solid #00FFFF; */
 }
 
 .logo {
@@ -266,10 +266,14 @@ padding-top: 0.1vw;
     padding-left: 1vw;
     font-size: 1vw;
 }
-
-hr{
+.navhr{
      border: none;
-    height: 1vw;
+    height: 0.5vw;
+    background: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF );
+}
+.generalhr{
+     border: none;
+    height: 0.5vw;
     background: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF );
     
     margin:10vw 0;
@@ -383,7 +387,7 @@ hr{
 }
 .items{
     width: 46vh;
-    height:  30vh;
+    height:  31vh;
     border-radius: 3.5vw;
 }
 .logoabout{
@@ -394,7 +398,7 @@ hr{
     padding-bottom:3vw;
 }
 .aboutme p {
-    margin-top: 4vw;
+    margin-top: 6vw;
      font-size: 3.6vw;
     font-weight: 500;
     line-height: 7vw;
@@ -421,7 +425,7 @@ padding-bottom: 4vw;
     padding-left: 3vw;
 }
 .goal p{
-    margin-top: 4vw;
+    margin-top: 6vw;
      font-size: 3.6vw;
     font-weight: 500;
     line-height: 7vw;
