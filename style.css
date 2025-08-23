@@ -267,6 +267,16 @@ padding-top: 0.1vw;
     font-size: 1vw;
 }
 
+hr{
+     border: none;
+    height: 1vw;
+    background: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF );
+    
+    margin:10vw 0;
+    border-radius: 12vw;
+
+}
+
 
 /* ----- Mobile (<=600px) ----- */
 @media (max-width:600px) {
@@ -372,12 +382,12 @@ padding-top: 0.1vw;
     row-gap: 8vw;
 }
 .items{
-    width: 42vh;
+    width: 46vh;
     height:  30vh;
     border-radius: 3.5vw;
 }
 .logoabout{
-    font-size: 8vw;
+    font-size: 10vw;
     padding-bottom: 2vw;
 }
 .items h1 {
