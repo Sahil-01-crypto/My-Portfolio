@@ -566,6 +566,7 @@ color: #7c9cf4;
   background-color: #000;
   color: #00FFFF;
   border: 1px solid #00FFFF ;
+  margin-bottom: 1vw;
  
 }
 
@@ -843,9 +844,9 @@ border-radius: 3vw;
 }
 .content button{
   margin-left: 2vh;
-  padding: 1vw 2vw;
+  padding: 2vw 3vw;
   font-weight: 600;
-  font-size: 2vw;
+  font-size: 3vw;
   border-radius: 2vw;
   margin-bottom: 7vw;
 }
