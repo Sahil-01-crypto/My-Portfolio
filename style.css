@@ -768,11 +768,13 @@ border-radius: 3vw;
   
 }
 .projectcontainer{
-  margin-left: 2vh;
+  margin-left: 2.4vh;
   width: 43vh;
   height: auto;
   border-radius: 4vw;
   padding-bottom: 4vw;
+   box-shadow: 0 0.2vw 5vw #39FF14;
+
  
   
 }
@@ -813,6 +815,10 @@ border-radius: 3vw;
 .generalhr{
   height: 0.2vh;
 }
+
+  
+  /* overflow: hidden; */
+      
 
   
 }
