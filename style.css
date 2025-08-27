@@ -157,6 +157,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 6vw #00FFFF;
+   animation: up-down 2s infinite ease-in-out;
 }
 
 .rightsidehome img {
@@ -210,7 +211,12 @@ body {
   text-align: center;
   font-size: 4vw;
   margin-bottom: 4vw;
+  /* animation: zoomInOut 3s ease-in-out infinite; */
+  /* display: inline-block; important for smooth scaling */
 }
+
+/* Keyframes for zoom in/out */
+
 
 .logoabout span {
   color: #00FFFF;
@@ -414,6 +420,157 @@ color: #7c9cf4;
   background-color: #00FFFF;
   color: #000;
 }
+
+.projects {
+  margin-left: 1.8vw;
+  height : 100vh;
+}
+.projectlogo {
+  text-align: center;
+  font-size: 4vw;
+  margin-bottom: 5vw;
+  animation: zoomInOut 3s ease-in-out infinite; 
+}
+
+
+
+.project-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1vw;
+  /* align-items: center; */
+}
+.projectcontainer {
+  height: 32vw;
+  width: 30vw;
+  background: #181818;
+  border-radius: 0.8vw;
+  box-shadow: 0 0.2vw 2vw rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+      
+}
+
+
+/* Glowing gradient border animation */
+.projectcontainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 3px;
+  background: linear-gradient(45deg, #00fff7, #00ff99, #00fff7);
+  background-size: 300% 300%;
+  animation: borderGlow 6s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  z-index: 1;
+}
+
+/* Inner content styling */
+.projectcontainer * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover effect */
+.projectcontainer:hover {
+  transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 0 40px #00fff7, 0 0 80px #00ffcc;
+}
+
+/* Add a glowing pulse inside */
+.projectcontainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(0,255,255,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.projectcontainer:hover::after {
+  opacity: 1;
+}
+
+/* Border glow animation */
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* .projectcontainer{
+  
+  height:32vw;
+  width: 30vw;
+ background: #181818;
+  border-radius: 0.5vw;
+   box-shadow: 0 0.2vw 2vw rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+} */
+/* .projectcontainer:hover{
+ border: 2px solid #00FFFF;
+    box-shadow: 0  0.5vw 2vw #00FFFF;
+  transform: translateY(-1vw);
+} */
+.image img{
+  margin-top: 2vw;
+  margin-left: 2.5vw;
+  background-color: #7c9cf4;
+  height: 15vw;
+  width: 25vw;
+  border-radius: 0.5vw;
+  /* overflow: hidden; */
+  box-shadow: 0 0 2vw red;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+.projectname{
+  margin: 1vw 0.5vw;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.projectcontainer p {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  
+  
+}
+.content{
+  text-align: center;
+}
+.projectcontainer button{
+  font-size: 0.8vw;
+  font-weight: 600;
+  margin-top: 2vw;
+  text-align: center;
+  margin-left: 1vw;
+  padding: 0.5vw 0.9vw;
+  border-radius: 0.5vw;
+  background-color: #000;
+  color: #00FFFF;
+  border: 1px solid #00FFFF ;
+ 
+}
+
+.Contact{
+  height: 100vh;
+}
+
 
 /* ----- Mobile (<=600px) ----- */
 @media (max-width:600px) {
@@ -637,6 +794,56 @@ border-radius: 3vw;
     border: 2px solid #00FFFF;
     box-shadow: 0  0.5vw 2vw #00FFFF;
   transform: translateY(-4vw);
+}
+.projects{
+  height: auto;
+}
+.projectlogo{
+  font-size:5vh;
+  margin-bottom: 5vh;
+}
+
+.project-container{
+  grid-template-columns: 1fr;
+  row-gap: 5vh;
+  
+}
+.projectcontainer{
+  margin-left: 2vh;
+  width: 43vh;
+  height: auto;
+  border-radius: 4vw;
+  
+}
+
+.image img {
+  margin-top: 3vh;
+  margin-left: 3vh;
+  margin-bottom: 1vh;
+  height: 25vh;
+  width: 34vh;
+  box-shadow: 0 0 2vh red;
+  
+}
+.projectname{
+  font-size: 2.9vh;
+}
+.content{
+  padding: 0 1vw;
+}
+.content p{
+ font-size: 3.6vw;
+    line-height: 7vw;
+    padding-left: 2.8vw;
+    padding-bottom: 2vw;
+}
+.content button{
+  margin-left: 2vh;
+  padding: 1vw 2vw;
+  font-weight: 600;
+  font-size: 2vw;
+  border-radius: 2vw;
+  margin-bottom: 7vw;
 }
 
   
