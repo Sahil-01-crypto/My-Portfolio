@@ -294,7 +294,7 @@ body {
   border: none;
   height: 0.2vw;
   background: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF);
-  margin-top: 0.3vh;
+  margin-top: 0.1vh;
 }
 
 .generalhr {
@@ -367,10 +367,12 @@ body {
   overflow: hidden;
 }
 
+
 .progress-bar span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, #ff4d4d, #4dd0e1);
+ background: linear-gradient(90deg, #ff512f, #f09819);
+
   width: 0;
   border-radius: 1vw;
   animation: fill-bar 2s forwards;
@@ -524,7 +526,7 @@ color: #7c9cf4;
 .image img{
   margin-top: 2vw;
   margin-left: 2.5vw;
-  background-color: #7c9cf4;
+  background-color: #11161d;
   height: 15vw;
   width: 25vw;
   border-radius: 0.5vw;
@@ -813,16 +815,18 @@ border-radius: 3vw;
   width: 43vh;
   height: auto;
   border-radius: 4vw;
+ 
   
 }
 
 .image img {
   margin-top: 3vh;
-  margin-left: 3vh;
+  margin-left: 4.4vh;
   margin-bottom: 1vh;
   height: 25vh;
   width: 34vh;
   box-shadow: 0 0 2vh red;
+  border-radius: 3vw;
   
 }
 .projectname{
@@ -844,6 +848,12 @@ border-radius: 3vw;
   font-size: 2vw;
   border-radius: 2vw;
   margin-bottom: 7vw;
+}
+.navhr{
+  height: 0.2vh;
+}
+.generalhr{
+  height: 0.2vh;
 }
 
   
