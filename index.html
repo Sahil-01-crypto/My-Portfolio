@@ -28,6 +28,7 @@
         <li><a href="#About">About</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
 
       <button class="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -54,9 +55,10 @@
     </div>
 
     <div class="rightsidehome">
-      <img src="new image...png" alt="">
+      <div class="float">
+        <img src="new image...png" alt="">
 
-
+      </div>
 
     </div>
   </section>
@@ -124,7 +126,7 @@
         </p>
 
         <div class="progress-bar">
-          <span  style="--progress: 80%"></span>
+          <span style="--progress: 80%"></span>
         </div>
       </div>
 
@@ -187,10 +189,11 @@
         </div>
         <div class="content">
           <div class="projectname">
-           Cafe Website
+            Cafe Website
           </div>
           <p>
-          A responsive cafe website showcasing menu, services, and ambiance. Designed to provide a smooth user experience with modern UI and easy navigation.
+            A responsive cafe website showcasing menu, services, and ambiance. Designed to provide a smooth user
+            experience with modern UI and easy navigation.
           </p>
           <button>
             HTML
@@ -214,10 +217,11 @@
         </div>
         <div class="content">
           <div class="projectname">
-            Portfolio Website 
+            Portfolio Website
           </div>
           <p>
-           A personal portfolio website showcasing my projects, skills, and journey as a developer. Built to highlight creativity, design.
+            A personal portfolio website showcasing my projects, skills, and journey as a developer. Built to highlight
+            creativity, design.
           </p>
 
           <button>
@@ -241,10 +245,11 @@
         </div>
         <div class="content">
           <div class="projectname">
-            To-Do List 
+            To-Do List
           </div>
           <p>
-           A smart to-do list app designed to turn plans into action. Stay organized, manage priorities, and achieve goals with ease.
+            A smart to-do list app designed to turn plans into action. Stay organized, manage priorities, and achieve
+            goals with ease.
           </p>
           <button>
             HTML
@@ -260,12 +265,33 @@
     </div>
   </section>
 
-  <hr class="generalhr">
+  <!-- <hr class="generalhr"> -->
 
   <section class="Contact">
+    <h2 id="Contact" class="contactlogo"> <i class="ri-contacts-line"></i> Contact Me!</h2>
+    <div class="form-item">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-info-form">
+       
+        <input type="hidden" name="access_key" value="157d971a-c737-4728-b737-a375106876df">
+          <input type="text" name="name" placeholder="Enter Your Name" class="contact-input" required>
+
+           <input type="email" name="email" placeholder="Enter Your Email" class="contact-input" required>
+
+           <textarea name="message" placeholder="Enter Your Message " class="contact-input  text-input" cols="30" rows="10" required></textarea>
+
+           <button class="submit-button" type="submit">Submit Message</button>
+        
+
+      </form>
+    </div>
+    
 
   </section>
+  <hr class="generalhr">
+  <footer class="ending">
 
+  </footer>
+ 
   <!-- Load JavaScript from js folder -->
   <script src="script.js"></script>
 </body>
