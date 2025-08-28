@@ -185,7 +185,7 @@ body {
 .socialmedia a {
   width: 4vw;
   height: 4vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   border: 0.2vw solid #00FFFF;
   border-radius: 50%;
   display: flex;
@@ -621,6 +621,7 @@ body {
   animation: shadowBlink 1s infinite alternate;
   margin: 2vw 0  ;
   cursor: pointer;
+  margin-bottom: 5vw;
 }
 @keyframes shadowBlink {
   0% {
