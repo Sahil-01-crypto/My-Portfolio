@@ -322,7 +322,7 @@ body {
 .whatido li {
   position: relative;
   font-size: 1vw;
-  color: #cccccc;
+  color: white;
   margin-bottom: 0.8vw;
   padding-left: 1.5vw;
 
@@ -361,8 +361,8 @@ body {
   row-gap: 8vw;
   column-gap: 1.2vw;
 
-
 }
+
 
 .card {
   color: white;
@@ -370,9 +370,11 @@ body {
   padding: 1.5vw;
   border-radius: 0.5vw;
   box-shadow: 0 0.2vw 2vw rgba(0, 0, 0, 0.3);
+  
   transition: all 0.4s ease;
 
 }
+
 
 .card:hover {
   border: 2px solid #00FFFF;
@@ -435,6 +437,7 @@ body {
   border-radius: 0.5vw;
   transition: all 0.4s ease-in-out;
   animation: shadowBlink 0.5s infinite alternate;
+   
 }
 
 
@@ -608,28 +611,29 @@ body {
   font-weight: 600;
   border-radius: 2vw;
   box-shadow: 0 0 2vw #00FFFF;
-  transition: 0.5s;
+  transition:  background-color 0.5s ease , color 0.5s ease , transform 0.5s ease ;
   animation: shadowBlink 0.5s infinite alternate;
   margin: 2vw 0;
   cursor: pointer;
   margin-bottom: 5vw;
 
 }
-
+.submit-button:hover {
+   transform: scale(1.1);
+  background-color: black;
+  color: #00FFFF;
+}
 @keyframes shadowBlink {
   0% {
     box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
   }
 
   100% {
-    box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF;
+    box-shadow: 0 0 20px #00FFFF, 0 0 20px #00FFFF;
   }
 }
 
-.submit-button:hover {
-  animation: none;
-  box-shadow: none;
-}
+
 
 /* FOOTER  */
 .ending {
@@ -638,7 +642,9 @@ body {
 }
 
 .footercontainer {
-  padding: 1vw;
+  padding-top: 1vw ;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 
 .socialicon {
@@ -701,31 +707,47 @@ body {
   opacity: 1;
 
 }
-
-.contactdetails ul {
-  margin-top: 1vw;
+.details{
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  gap: 0.4vw;
+  justify-content: space-between;
 }
 
-.contactdetails ul li {
-  list-style: none;
-  font-size: 1vw;
-  font-weight: 600;
-}
 
-.contactdetails div {
-  font-size: 1.7vw;
-  font-weight: 600;
+.contact-details h2{
+  font-size: 1.5vw;
+  /* letter-spacing: 2px; */
   color: #00FFFF;
 }
-
-.contactdetails i {
+.contact-details i {
+  font-size: 1.2vw;
   color: #00FFFF;
-  font-size: 1.3vw;
 }
+.contact-details p {
+  font-size: 1.1vw;
+  font-weight: 600;
+  line-height: 2vw;
+}
+.up-go a{
+  font-size: 3vw;
+  border: 2px solid #00ffff;
+  background-color: #00ffff;
+  color: black;
+  border-radius: 0.4vw;
+  box-shadow: 0 0 0.5vw #00FFFF;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+  animation: shadowBlink 0.5s infinite alternate;
+
+   display: inline-block;    
+  text-align: center;
+  
+}
+.up-go a:hover{
+  transform: scale(1.1);
+  background-color: black;
+  color: #00FFFF;
+  
+}
+
 
 .bottom {
   height: 100%;
@@ -921,7 +943,7 @@ body {
   .whatido ul li {
     font-size: 3.6vw;
     line-height: 7vw;
-    /* padding-left: 2vw; */
+    padding-left: 2vw;
   }
 
   .whatido ul {
@@ -1190,5 +1212,30 @@ body {
   .socialmedia a {
     font-size: 5vw;
     text-align: center;
+  }
+.details{
+  margin-top: 8vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+  .contact-details h2{
+    font-size: 5vw;
+    line-height: 10vw;
+   
+  }
+  .contact-details i{
+    font-size:4vw ;
+    opacity: 1;
+  }
+  .contact-details p {
+    font-size: 3.4vw;
+    line-height: 5.8vw;
+    
+  }
+  .up-go a{
+    margin-top: 6vw;
+    font-size: 7.5vw;
+    margin-right: 3vw;
+    border-radius: 1.5vw;
   }
 }
