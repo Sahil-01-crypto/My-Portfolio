@@ -28,7 +28,7 @@ body {
   height: 5vw;
   min-height: 60px;
   position: relative;
-  /* border-bottom: 2px solid #00FFFF; */
+
 }
 
 .logo {
@@ -82,6 +82,8 @@ body {
   font-size: 5vw;
 }
 
+
+/* HOME SECTION */
 .homesec {
   height: 100vh;
   width: 100%;
@@ -94,7 +96,7 @@ body {
   width: 60%;
   height: 100vh;
   padding: 18vw 8vw;
-  /* background-color: aqua; */
+
 }
 
 .leftsidehome h1 {
@@ -102,23 +104,23 @@ body {
   font-weight: 700;
   line-height: 2vw;
   animation: up-down 2s infinite ease-in-out;
-  /* Apply the animation */
+
 }
 
 @keyframes up-down {
   0% {
     transform: translateY(0);
-    /* Start at the original position */
+
   }
 
   50% {
     transform: translateY(-10px);
-    /* Move up by 10 pixels */
+
   }
 
   100% {
     transform: translateY(0);
-    /* Return to the original position */
+
   }
 }
 
@@ -148,7 +150,7 @@ body {
 .rightsidehome {
   width: 30vw;
   height: 30vw;
-  
+
   background-color: bisque;
   display: flex;
   justify-content: center;
@@ -172,14 +174,13 @@ body {
 }
 
 
-/* Social Media Icons */
+
 .socialmedia {
   display: flex;
   gap: 2vw;
   margin-top: 2vw;
   padding-left: 0;
-  
-  /* Remove extra padding */
+
 }
 
 .socialmedia a {
@@ -196,7 +197,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Optional: Add hover effect */
+
 .socialmedia a:hover {
   background: #00FFFF;
   border: 0.2vw solid white;
@@ -205,6 +206,8 @@ body {
   transform: scale(1.1);
 }
 
+
+/* ABOUT  SECTION  */
 .aboutsec {
   width: 100%;
   height: 130vh;
@@ -215,11 +218,10 @@ body {
   font-size: 4vw;
   margin-bottom: 4vw;
   color: #ededed;
-  /* animation: zoomInOut 3s ease-in-out infinite; */
-  /* display: inline-block; important for smooth scaling */
+
 }
 
-/* Keyframes for zoom in/out */
+
 
 
 
@@ -235,7 +237,7 @@ body {
 }
 
 .items {
-  /* margin-left: 10vw; */
+
   background-color: #11161d;
   width: 35vw;
   height: 19vw;
@@ -245,7 +247,7 @@ body {
   transition: transform 0.5s ease;
   transition: 0.5s;
 
-  /* box-shadow: 0 0 2vw #00FFFF; */
+
 }
 
 .items:hover {
@@ -274,14 +276,14 @@ body {
 
 .items ul {
   padding-left: vw;
-  /* Adjust this value as needed to align the markers */
+
 }
 
 .items ul li {
   font-size: 1.1vw;
   font-weight: 500;
   line-height: 2vw;
-  /* overflow: hidden; */
+
 }
 
 .education h2 {
@@ -307,13 +309,13 @@ body {
   height: 0.2vw;
   background-image: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF);
   border-radius: 1vw;
-  /* margin-top:5vh; */
+
   margin-bottom: 5vh;
 }
 
 .whatido ul {
   list-style: none;
-  /* remove default bullets */
+
   padding-left: 0;
 }
 
@@ -323,21 +325,23 @@ body {
   color: #cccccc;
   margin-bottom: 0.8vw;
   padding-left: 1.5vw;
-  /* space for glowing bullet */
+
 }
 
 .whatido li::before {
   content: "•";
-  /* custom bullet */
+
   position: absolute;
   left: 0;
   top: 0;
   color: #00FFFF;
-  /* neon color */
+
   font-size: 1.5vw;
   text-shadow: 0 0 8px #00FFFF, 0 0 12px #00FFFF;
-  /* glow effect */
+
 }
+
+/* Skill  section  */
 
 #Skills {
   height: 100vh;
@@ -357,7 +361,7 @@ body {
   row-gap: 8vw;
   column-gap: 1.2vw;
 
-  /* align-items: center; */
+
 }
 
 .card {
@@ -430,7 +434,7 @@ body {
   box-shadow: 0 0 1vw #00FFFF;
   border-radius: 0.5vw;
   transition: all 0.4s ease-in-out;
-   animation: shadowBlink 0.5s infinite alternate;
+  animation: shadowBlink 0.5s infinite alternate;
 }
 
 
@@ -440,6 +444,9 @@ body {
   background-color: #00FFFF;
   color: #000;
 }
+
+
+/* PROJECT SECTION  */
 
 .projects {
   margin-left: 1.4vw;
@@ -532,6 +539,8 @@ body {
 
 }
 
+
+/* CONTACT -- SECTION   */
 .Contact {
   height: 70vh;
 
@@ -590,80 +599,95 @@ body {
   /* border-radius: 2vw; */
 }
 
-.submit-button{
+.submit-button {
   font-size: 1vw;
   padding: 0.9vw 2vw;
-  border:none;
+  border: none;
   background-color: #00FFFF;
   color: #000;
   font-weight: 600;
   border-radius: 2vw;
   box-shadow: 0 0 2vw #00FFFF;
-  transition: 0.5s ;
+  transition: 0.5s;
   animation: shadowBlink 0.5s infinite alternate;
-  margin: 2vw 0  ;
+  margin: 2vw 0;
   cursor: pointer;
   margin-bottom: 5vw;
-  
+
 }
+
 @keyframes shadowBlink {
   0% {
     box-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
   }
+
   100% {
     box-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFF;
   }
 }
-.submit-button:hover{
-animation: none;
-box-shadow: none;
+
+.submit-button:hover {
+  animation: none;
+  box-shadow: none;
 }
-.ending{
+
+/* FOOTER  */
+.ending {
   height: auto;
-   background-color:rgb(17, 17, 17);
+  background-color: rgb(17, 17, 17);
 }
-.footercontainer{
-padding: 1vw;
+
+.footercontainer {
+  padding: 1vw;
 }
-.socialicon{
+
+.socialicon {
   display: flex;
   justify-content: center;
   align-items: center;
-gap: 1.5vw;
-  
+  gap: 2vw;
+  ;
+
 }
 
- .socialicon a {
-    display: flex;                 /* center icon inside */
-    justify-content: center;
-    align-items: center;
-    width: 2.8vw;                    /* fixed width */
-    height: 2.8vw;                   /* fixed height */
-    color: #00FFFF;
-    border: 0.15vw solid #00FFFF;
-    border-radius: 50%;            /* perfect circle */
-    font-size: 1.5vw;              /* icon size */
-    text-decoration: none;
-    transition: transform 0.5s;
+.socialicon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.8vw;
+  height: 2.8vw;
+  color: #00FFFF;
+  border: 0.15vw solid #00FFFF;
+  border-radius: 50%;
+  font-size: 1.5vw;
+  text-decoration: none;
+  transition: transform 0.5s;
+
 }
-.socialicon a:hover{
+
+.socialicon a:hover {
   border: 0.1vw solid white;
   box-shadow: 0 0 1vw #00FFFF;
   background-color: #00FFFF;
   color: black;
   transform: scale(1.1);
+  opacity: 1;
+  border: 2px solid white;
 }
-.footernav ul{
+
+.footernav ul {
   margin-top: 2vw;
   display: flex;
   justify-content: center;
   gap: 2vw;
-  
+
 }
-.footernav ul li{
+
+.footernav ul li {
   list-style-type: none;
 }
-.footernav ul li a{
+
+.footernav ul li a {
   color: #00FFFF;
   text-decoration: none;
   font-size: 1vw;
@@ -672,10 +696,12 @@ gap: 1.5vw;
   transition: 0.5s;
 
 }
-.footernav ul li a:hover{
+
+.footernav ul li a:hover {
   opacity: 1;
-  
+
 }
+
 .contactdetails ul {
   margin-top: 1vw;
   display: flex;
@@ -683,22 +709,25 @@ gap: 1.5vw;
   justify-content: baseline;
   gap: 0.4vw;
 }
-.contactdetails ul li{
+
+.contactdetails ul li {
   list-style: none;
   font-size: 1vw;
   font-weight: 600;
 }
-.contactdetails div{
+
+.contactdetails div {
   font-size: 1.7vw;
   font-weight: 600;
   color: #00FFFF;
 }
-.contactdetails i{
+
+.contactdetails i {
   color: #00FFFF;
   font-size: 1.3vw;
 }
 
-.bottom{
+.bottom {
   height: 100%;
   background-color: #000;
   text-align: center;
@@ -706,22 +735,26 @@ gap: 1.5vw;
   font-size: 1vw;
 }
 
-  .desiner{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0 5px;
-  
-  }
-  
-.newhr{
+.desiner {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+
+}
+
+.newhr {
   border: none;
   height: 0.2vw;
   background-image: linear-gradient(to right, #00FFFF, #0c3baa, #00FFFF);
   border-radius: 1vw;
   /* margin-top:5vh; */
 }
+
+
+
+
 
 
 /* ----- Mobile (<=600px) ----- */
@@ -778,7 +811,7 @@ gap: 1.5vw;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    /* Add this line to move content to the top */
+
   }
 
   .leftsidehome {
@@ -788,15 +821,15 @@ gap: 1.5vw;
     width: 100%;
     height: 40vh;
     display: flex;
-    /* Add this line to enable flexbox */
+
     flex-direction: column;
-    /* This is already present and correct */
+
     justify-content: flex-start;
   }
 
   .leftsidehome h1 {
     text-align: center;
-    /* margin-left: 4.5vw; */
+
     font-size: 13vw;
     line-height: 6vh;
   }
@@ -812,6 +845,11 @@ gap: 1.5vw;
     line-height: 2.4vh;
     padding-right: 2vw;
     text-align: center;
+  }
+
+  .whatido li::before {
+    font-size: 5vw;
+
   }
 
   .socialmedia {
@@ -853,7 +891,7 @@ gap: 1.5vw;
 
   .items h1 {
     padding-bottom: 3vw;
-    font-size: 5vw ;
+    font-size: 5vw;
   }
 
   .aboutme p {
@@ -1039,9 +1077,11 @@ gap: 1.5vw;
   .rightsidehome:hover {
     box-shadow: 0 0 12vw #00FFFF;
   }
-.Contact{
-  margin-top: 10vw;
-}
+
+  .Contact {
+    margin-top: 10vw;
+  }
+
   .Contact h2 {
     font-size: 8vw;
   }
@@ -1058,7 +1098,7 @@ gap: 1.5vw;
     border: 0.8vw solid #00FFFF;
     border-radius: 10vw;
     padding-left: 2vw;
-    /* text-align: center; */
+
     font-size: 3vw;
     font-weight: 600;
   }
@@ -1073,58 +1113,82 @@ gap: 1.5vw;
     padding-top: 1vw;
     margin: 0 4vw;
   }
-  .submit-button{
+
+  .submit-button {
     margin-top: 5vw;
-    padding:3vw  4vw;
+    padding: 3vw 4vw;
     border-radius: 4vw;
     box-shadow: 0 0 5vw #00FFFF;
     margin-bottom: 5vw;
     font-size: 4vw;
   }
-  .socialicon{
+
+  .socialicon {
     margin-top: 2vw;
     gap: 5vw;
   }
-  .socialmedia a{
+
+  .socialmedia a {
     border: 0.5vw solid #00FFFF;
   }
-  .socialicon a{
+
+  .socialicon a {
     font-size: 5vw;
     height: 9vw;
     width: 9vw;
     border: 0.5vw solid #00FFFF;
   }
-  .footernav{
+
+  .footernav {
     margin-top: 4vw;
     margin-bottom: 6vw;
   }
-  .footernav ul{
-    gap: 5vw;
+
+  .footernav ul {
+    gap: 4vw;
   }
+
   .footernav ul li a {
-    font-size: 3vw;
+    opacity: 0.7;
+    margin-top: 1vw;
+    font-size: 4vw;
   }
-  .contactdetails{
+
+  .contactdetails {
     margin-bottom: 0.5vw;
   }
-  .contactdetails div{
+
+  .contactdetails div {
     font-size: 5vw
   }
+
   .contactdetails ul li {
     font-size: 3vw;
-    line-height:4.5vw;
+    line-height: 4.5vw;
     font-weight: 400;
   }
+
   .contactdetails i {
     font-size: 4vw;
   }
+
   .bottom p {
     font-size: 3vw;
   }
- .designer  {
-   opacity: 0.7;
+
+  .designer {
+    opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
- }
+  }
+
+  .socialmedia {
+    margin-bottom: 10vw;
+  }
+
+  .socialmedia a {
+    font-size: 5vw;
+    text-align: center;
+  }
 }

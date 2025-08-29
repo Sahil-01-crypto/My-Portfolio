@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     icon.classList.toggle("ri-close-line", isOpen);
   });
 
-  // Close menu when a link is clicked (mobile)
+ 
   document.querySelectorAll(".navmenu a").forEach(a => {
     a.addEventListener("click", () => {
       navMenu.classList.remove("active");
