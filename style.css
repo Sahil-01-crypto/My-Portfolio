@@ -905,6 +905,9 @@ body {
     height: auto;
     border-radius: 3.5vw;
   }
+  .items:hover {
+    box-shadow: 0 0 5vw #00FFFF;
+  }
 
   .logoabout {
     font-size: 10vw;
@@ -950,6 +953,8 @@ body {
     padding-left: 3vw;
   }
 
+  
+
   .goal p {
     margin-top: 6vw;
     font-size: 3.6vw;
@@ -964,6 +969,7 @@ body {
   .skill-container {
     display: grid;
     grid-template-columns: 1fr;
+    column-gap: 1vw;
 
   }
 
@@ -1018,7 +1024,7 @@ body {
 
   .card:hover {
     border: 2px solid #00FFFF;
-    box-shadow: 0 0.5vw 2vw #00FFFF;
+    box-shadow: 0 0.5vw 6vw #00FFFF;
     transform: translateY(-4vw);
   }
 
@@ -1229,8 +1235,10 @@ body {
   }
   .contact-details p {
     font-size: 3.4vw;
-    line-height: 5.8vw;
-    
+    line-height: 5vw;
+  }
+  .mail{
+    padding-bottom: 2vw;
   }
   .up-go a{
     margin-top: 6vw;
